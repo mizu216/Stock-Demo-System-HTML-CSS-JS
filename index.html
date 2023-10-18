@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="flex-container">
+
+            <div class="flex-item logobox">
+                <div>
+                    <img class="logo" src="assets/Img/Group 17.png" alt="logo">
+                </div>
+                <div>
+                    <p2>TOTAL TRAFFIC</p2>
+                    <p1>123,456</p1>
+                </div>
+            </div>
+
+            <div class="flex-item logobox">
+                <div>
+                    <img class="logo" src="assets/Img/Group -1.png" alt="logo">
+                </div>
+                <div>
+                    <p2>NEW USERS</p2>
+                    <p1>2,345</p1>
+                </div>
+            </div>
+
+            <div class="flex-item logobox">
+                <div>
+                    <img class="logo" src="assets/Img/Group -2.png" alt="logo">
+                </div>
+                <div>
+                    <p2>SALES</p2>
+                    <p1>924</p1>
+                </div>
+            </div>
+
+            <div class="flex-item logobox">
+                <div>
+                    <img class="logo" src="assets/Img/Group -3.png" alt="logo">
+                </div>
+                <div>
+                    <p2>PERFORMANCE</p2>
+                    <p1>48.65%</p1>
+                </div>
+            </div>
+
+            <div class="flex-item break"></div>
+
+            <div class="flex-item container profile">
+                <div>
+                    <img class="mask" src="assets/Img/Mask Group 2.png" alt="mask">
+                </div>
+                <div class="avatar pic-box">
+                    <img class = "avatar" id="image" src="assets/Img/anonymousImg.png" alt="avatar">
+                </div>
+                <div class="avatar-info">
+                    <p3 id ="first-name"></p3>
+                    <p3 id ="last-name"></p3>
+                    <p4 id ="email"></p4>
+                </div>
+                <div class="loading-box">
+                    <div id = "loading"></div>
+                </div>
+                <div>
+                    <button class="connect" onclick="showProfile()">Connect</button>
+                </div>
+                
+            </div>
+
+            <div class="flex-item container instrument">
+                <div class="stock-bar">
+                    <p5>Instruments</p5>
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                <div class="stock-table">
+                    <table id="stock-data">
+                      <thead>
+                        <tr>
+                          <th class = "symbolsize">Symbol</th>
+                          <th class = "asksize">Ask</th>
+                          <th class = "bidsize">Bid</th>
+                          <th class = "changesize">Daily Change</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                </div>
+                <div>
+                    <button  class="pgButton prev" onclick="prevPage()">Prev</button>
+                    <p id="pg-number"></p>
+                    <button  class="pgButton next" onclick="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
